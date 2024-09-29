@@ -19,11 +19,14 @@
 
 }
 
+
+
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
 
-}
+} 
 
 body{
     background-color: var(--bg-color);
@@ -36,7 +39,7 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: transparent;
+    background: #081b29;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -86,18 +89,33 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+#loom-companion-mv3{
+    display: none;
 
-.home{
+}
+
+
+
+.home {
     display: flex;
     align-items: center;
     padding: 0 9%;
     background: url('../img/3d-rendering-kid-playing-online-removebg-preview.png') no-repeat;
-    background-size: 425px;
+    background-size: 400px;
     background-position: right;
     margin-right: 200px;
     border-radius: 15px 50px;
-
 }
+
+/* Media query for mobile and tablet screens */
+
+
+@media (max-width: 1200px) {
+    .home {
+        background: none; /* Remove background image */
+    }
+}
+
 
 .home-content{
     max-width: 60rem;
@@ -768,6 +786,8 @@ span{
 }
 
 
+
+
 /* ANIMATION RELOAD AND SCROLL */
 
 .animate{
@@ -796,19 +816,10 @@ span{
     animation-delay: calc(.3s * var(--i));
 }
 
-/* .animate.scroll{
-    transition: 1s ease;
-    transition-delay: calc(.3s * var(--i));
-    animation: none;
-} */
-
-
-
-
-
-
  
   /* break point */
+
+  
 
   @media (max-width:1200px){
     html{
@@ -955,10 +966,6 @@ span{
         font-size: 5rem;
     }
   }
-
-
-
-
 
 
   /* KEY FRAMES ANNIMATION */
