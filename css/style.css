@@ -330,7 +330,8 @@ span{
 }
 
 .about-img img{
-    width: 90%;
+    width: 100%;
+    hieght: 100%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
